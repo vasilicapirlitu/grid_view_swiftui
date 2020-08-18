@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+
 class SGConvenience{
     #if os(watchOS)
     static var deviceWidth:CGFloat = WKInterfaceDevice.current().screenBounds.size.width
