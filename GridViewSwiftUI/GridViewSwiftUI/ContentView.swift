@@ -13,7 +13,6 @@ private var sharedRing = LetterSectionModel()
 
 struct ContentView: View {
     var body: some View {
-//        return Text.init("dasda")
     return    GeometryReader { geometry in
 
         GridView(onDetail: { string, key, isLast, contains   in
@@ -28,7 +27,6 @@ struct ContentView: View {
                             sharedRing.addLetterAt(RectLetterInfo(char: string))
                         }
                     }
-//                    self.isSubmitEnabled = sharedRing.wordEnabled
                     sharedGrid.selectIndex(key: key)
                 }
             }
